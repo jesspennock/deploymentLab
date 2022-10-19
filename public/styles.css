@@ -11,4 +11,9 @@ button {
     text-align: center;
     font-size: larger;
     padding: 15 px;
+    margin: auto;
+    
+}
+img {
+    padding-top: 15px;
 }
