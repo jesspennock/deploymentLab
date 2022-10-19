@@ -1,4 +1,7 @@
 h1 {
     color: blue;
     font-size: x-large;
+    text-align: center;
+    border: 15px;
+    padding: 15px;
 }
