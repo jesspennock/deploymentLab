@@ -13,4 +13,6 @@ const {getHTML, getCSS} = require('./controller')
 app.get('/', getHTML)
 app.get('/css', getCSS)
 
-app.listen(4001, console.log('Server running on 4001'))
+const port = process.env.PORT || 4001
+
+app.listen(port, console.log(`Server running on ${port}`))

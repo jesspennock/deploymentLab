@@ -8,3 +8,4 @@ module.exports = {
         res.sendFile(path.join(__dirname, '../public/styles.css'))
     }
 }
+console.log(__dirname)
