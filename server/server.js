@@ -14,7 +14,6 @@ var rollbar = new Rollbar({
   captureUncaught: true,
   captureUnhandledRejections: true,
 })
-module.exports = {rollbar}
 
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
@@ -28,6 +27,11 @@ const { Module } = require("module")
 
 app.get('/', getHTML)
 app.get('/css', getCSS)
+
+app.get('/trains', (req, res) => {
+    rollbar.info("a picture of a train was clicked")
+    // res.status(200).send(['train1', 'train2'])
+})
 
 const port = process.env.PORT || 4001
 

@@ -1,9 +1,8 @@
-const {rollbar} = require('./server')
 let castle = document.querySelector("img")
 
 const helloAlert = evt => {
     alert("Trains are the best!")
-    rollbar.log('The helloAlert button was clicked')
+    axios.get('/trains')
 }
 
 castle.addEventListener('click', helloAlert)
