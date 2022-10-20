@@ -14,7 +14,7 @@ var rollbar = new Rollbar({
   captureUncaught: true,
   captureUnhandledRejections: true,
 })
-export {rollbar}
+module.exports = {rollbar}
 
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
