@@ -1,19 +1,79 @@
+
+body{
+   background-color: cadetblue;
+}
 h1 {
-    color: blue;
-    font-size: x-large;
+    color: rgb(83, 38, 13);
+    font-size: 30px;
     text-align: center;
     border: 15px;
     padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div {
+    font-size: 20px;
 }
 
 button {
-    color: orangered;
+    color: rgb(79, 34, 19);
     text-align: center;
-    font-size: larger;
+    font-size: 50px;
     padding: 15 px;
-    margin: auto;
+    margin: 15px;
+    position: relative;
+    background-color: lightgrey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
-img {
-    padding-top: 15px;
+#topImages {
+    display: flex;
+}
+#train {
+    height: 400px;
+    position: relative;
+    padding-right: 15px;
+}
+#conductor {
+    height: 400px;
+    position: relative
+}
+#mainContent {
+    background-color: 
+    light burlywood;
+    display: flex;
+    margin: 20px;
+    text-align: center;
+
+
+}
+#history {
+    background-color:
+    blanchedalmond;
+    border: 5px;
+    text-align: center;
+    margin-right: 30px;
+    padding: 5px;
+
+}
+#types {
+    background-color: blanchedalmond;
+    border: 5px;
+    padding: 5px;
+}
+#imageSquares {
+ display: flex;
+ background-color: blanchedalmond;
+}
+#imageSquares img {
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+}
+p {
+    background-color: lightgray;
+    font-size: 16px;
+    text-align: left;
+}
+ul {
+    background-color: lightgray;
 }
