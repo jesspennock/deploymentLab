@@ -14,12 +14,17 @@ var rollbar = new Rollbar({
   captureUncaught: true,
   captureUnhandledRejections: true,
 })
+export {rollbar}
 
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 rollbar.log('Test')
 
+rollbar.info("A button was pushed to request info from Lukas")
+rollbar.info("A button was pushed to try and buy a train guide")
+
 const {getHTML, getCSS} = require('./controller')
+const { Module } = require("module")
 
 app.get('/', getHTML)
 app.get('/css', getCSS)
